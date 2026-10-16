@@ -1,0 +1,20 @@
+[
+  {
+    "id": "6546e6ad-68ac-4ca3-8e77-c31674b99370",
+    "name": "Test",
+    "msg": "Hello from the console",
+    "createdAt": "2026-10-02T13:34:47.683Z"
+  },
+  {
+    "id": "53ace926-8d83-4213-87f5-8e4b8f026478",
+    "name": "noah",
+    "msg": "HIII",
+    "createdAt": "2026-10-05T13:03:25.740Z"
+  },
+  {
+    "id": "86899075-47ed-4a72-a30a-d59c60056dab",
+    "name": "Matthaios",
+    "msg": "Hey",
+    "createdAt": "2026-10-05T13:28:09.347Z"
+  }
+]
