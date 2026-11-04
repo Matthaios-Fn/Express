@@ -1,0 +1,1526 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 10% 15%, rgba(252, 249, 249, 0.22), transparent 30%),
+        radial-gradient(circle at 90% 85%, rgba(255, 255, 255, 0.18), transparent 32%),
+        linear-gradient(135deg,
+            #000000 0%,
+            #0b0b0b 25%,
+            #202020 50%,
+            #0b0b0b 72%,
+            #000000 100%);
+
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+p {
+    color: #dddddd;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ========================================
+   HOME / LOGIN PAGE
+======================================== */
+
+body>h1 {
+    margin: 70px auto 10px;
+    max-width: 900px;
+
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+
+    letter-spacing: -1px;
+
+    text-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.9),
+        0 0 25px rgba(255, 0, 0, 0.08);
+}
+
+body>p {
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    color: #dddddd;
+}
+
+/* ========================================
+   WELCOME / STATUS BOX
+======================================== */
+
+#status {
+    width: 360px;
+    margin: 25px auto;
+    padding: 22px 25px;
+
+    background:
+        linear-gradient(145deg, #101010, #242424);
+
+    border: 1px solid #751515;
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.75),
+        0 0 25px rgba(255, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+#status h1 {
+    margin: 0 0 10px;
+
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#status a {
+    display: inline-block;
+
+    margin-top: 5px;
+    padding: 9px 18px;
+
+    background: #c40000;
+    color: #ffffff;
+
+    border: 1px solid #ff3333;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+#status a:hover {
+    background: #ff1616;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 20px rgba(255, 0, 0, 0.35);
+}
+
+/* ========================================
+   LOGIN BOX
+======================================== */
+
+#login-section {
+    width: 360px;
+
+    margin: 25px auto;
+    padding: 30px;
+
+    background:
+        linear-gradient(145deg, #0d0d0d, #252525);
+
+    border: 1px solid #801515;
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.75),
+        0 0 30px rgba(255, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+#login-section h2 {
+    margin-bottom: 22px;
+
+    color: #ffffff;
+    font-size: 25px;
+
+    text-shadow:
+        0 0 15px rgba(255, 0, 0, 0.15);
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+#login-form label {
+    margin-bottom: 8px;
+
+    color: #eeeeee;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#login-form input {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    background: #050505;
+    color: #ffffff;
+
+    border: 1px solid #5c5c5c;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+#login-form input:focus {
+    border-color: #ff2222;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 0, 0, 0.15),
+        0 0 20px rgba(255, 0, 0, 0.12);
+}
+
+#login-form button {
+    width: 100%;
+
+    margin-top: 18px;
+}
+
+/* ========================================
+   LOGIN MESSAGE
+======================================== */
+
+#login-message {
+    margin-top: 15px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #ff3333;
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.25);
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+button {
+    padding: 11px 22px;
+
+    background: #c90000;
+    color: #ffffff;
+
+    border: 1px solid #ff3030;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background: #ff1a1a;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(255, 0, 0, 0.3);
+}
+
+#logout-button {
+    margin-top: 5px;
+
+    background: #151515;
+
+    border: 1px solid #5c5c5c;
+}
+
+#logout-button:hover {
+    background: #2a2a2a;
+
+    border-color: #ff2222;
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 0, 0.12);
+}
+
+/* ========================================
+   MAIN LINKS
+======================================== */
+
+.mainlinks {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+    flex-wrap: wrap;
+}
+
+.mainlinks a {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background:
+        linear-gradient(145deg, #0b0b0b, #1e1e1e);
+
+    color: #ffffff;
+
+    border: 1px solid #751515;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    transition: 0.2s ease;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.55);
+}
+
+.mainlinks a:hover {
+    background: #c40000;
+
+    border-color: #ff3333;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 22px rgba(255, 0, 0, 0.3);
+}
+
+/* ========================================
+   PROJECTS PAGE HEADER
+======================================== */
+
+header {
+    width: 100%;
+
+    padding: 18px 0;
+
+    background:
+        linear-gradient(90deg, #050505, #151515, #050505);
+
+    border-bottom: 1px solid #751515;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.75);
+}
+
+header nav {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    text-shadow:
+        0 0 15px rgba(255, 0, 0, 0.12);
+}
+
+header nav ul {
+    display: flex;
+
+    gap: 25px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+header nav a {
+    color: #dddddd;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+header nav a:hover {
+    color: #ff2222;
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.35);
+}
+
+/* ========================================
+   PROJECT CONTENT
+======================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.projects-section {
+    padding-top: 60px;
+}
+
+.projects-section h2 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 38px;
+
+    text-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(255, 0, 0, 0.1);
+}
+
+.intro {
+    margin-bottom: 40px;
+
+    color: #dddddd;
+}
+
+/* ========================================
+   PROJECT CARDS
+======================================== */
+
+.projects-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 280px;
+    min-height: 200px;
+
+    padding: 28px;
+
+    background:
+        linear-gradient(145deg, #101010, #262626);
+
+    border: 1px solid #5c2020;
+    border-radius: 14px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.7),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    transition: 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #ff2222;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.75),
+        0 0 30px rgba(255, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+.project-card p {
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #d0d0d0;
+}
+
+/* ========================================
+   PROJECT BUTTON
+======================================== */
+
+.project-button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background: #c40000;
+    color: #ffffff;
+
+    border: 1px solid #ff3333;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+.project-button:hover {
+    background: #ff2222;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* ========================================
+   DASHBOARD PAGE
+======================================== */
+
+body>nav:not(#status) {
+    margin: 25px auto;
+}
+
+body>nav:not(#status) a {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background:
+        linear-gradient(145deg, #111111, #222222);
+
+    color: #ffffff;
+
+    border: 1px solid #6b1a1a;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+body>nav:not(#status) a:hover {
+    background: #c40000;
+
+    border-color: #ff3333;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(255, 0, 0, 0.25);
+}
+
+/* ========================================
+   GUESTBOOK
+======================================== */
+
+#guestbook-list {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 30px auto 25px;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: left;
+}
+
+#guestbook-list li {
+    margin-bottom: 15px;
+
+    padding: 18px 20px;
+
+    background:
+        linear-gradient(145deg, #101010, #252525);
+
+    border: 1px solid #5c2020;
+    border-radius: 12px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.6);
+
+    transition: 0.2s ease;
+}
+
+#guestbook-list li:hover {
+    transform: translateY(-3px);
+
+    border-color: #ff2222;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.7),
+        0 0 20px rgba(255, 0, 0, 0.15);
+}
+
+/* ========================================
+   GUESTBOOK FORM
+======================================== */
+
+#guestbook-form {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+#guestbook-form input,
+#guestbook-form textarea {
+    flex: 1;
+
+    padding: 13px 15px;
+
+    background: #050505;
+    color: #ffffff;
+
+    border: 1px solid #5c5c5c;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+#guestbook-form textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+#guestbook-form input::placeholder,
+#guestbook-form textarea::placeholder {
+    color: #888888;
+}
+
+#guestbook-form input:focus,
+#guestbook-form textarea:focus {
+    border-color: #ff2222;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 0, 0, 0.12),
+        0 0 18px rgba(255, 0, 0, 0.1);
+}
+
+#guestbook-form button {
+    padding: 12px 24px;
+
+    background: #c40000;
+}
+
+#guestbook-form button:hover {
+    background: #ff2222;
+}
+
+/* ========================================
+   GUESTBOOK HOME BUTTON
+======================================== */
+
+body>a[href="./index.html"] {
+    display: inline-block;
+
+    margin-top: 5px;
+    padding: 10px 20px;
+
+    background:
+        linear-gradient(145deg, #111111, #222222);
+
+    color: #ffffff;
+
+    border: 1px solid #6b1a1a;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+body>a[href="./index.html"]:hover {
+    border-color: #ff2222;
+
+    background: #c40000;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(255, 0, 0, 0.25);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    margin-top: 70px;
+
+    padding: 20px;
+
+    border-top: 1px solid rgba(120, 0, 0, 0.35);
+}
+
+footer p {
+    font-size: 14px;
+
+    color: #aaaaaa;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    body>h1 {
+        margin-top: 45px;
+
+        padding: 0 15px;
+
+        font-size: 36px;
+    }
+
+    #login-section,
+    #status {
+        width: 90%;
+    }
+
+    #guestbook-form {
+        flex-direction: column;
+    }
+
+    #guestbook-form input,
+    #guestbook-form textarea {
+        width: 100%;
+    }
+
+    #guestbook-form button {
+        width: 100%;
+    }
+
+    #guestbook-list {
+        width: 90%;
+    }
+
+    header nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    .projects-section {
+        padding-top: 40px;
+    }
+
+    .projects-section h2 {
+        font-size: 32px;
+    }
+
+    .project-card {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+    .mainlinks {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .mainlinks a {
+        width: 220px;
+    }
+}
+
+/* ========================================
+   404 PAGE
+======================================== */
+
+.error-page {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 120px;
+    margin: 0;
+}
+
+.error-page h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.error-page p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.home-button:hover {
+    opacity: 0.8;
+}
+
+.space-image {
+    width: 40rem;
+}
+
+/* ==============================
+   SPACE PICTURE OF THE DAY
+   Black & Red Futuristic Theme
+================================= */
+
+:root {
+    --red: #ff3030;
+    --red-hover: #ff4848;
+    --black: #0a0a0a;
+    --card: #121212;
+    --card-light: #191919;
+    --border: #292929;
+    --text: #f5f5f5;
+    --muted: #999999;
+}
+
+body {
+    margin: 0;
+    padding: 0 24px 60px;
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    position: relative;
+    padding: 9px 18px;
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+nav a:hover {
+    color: white;
+    background: rgba(255, 48, 48, 0.12);
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 3px;
+    height: 2px;
+    background: var(--red);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* ==============================
+   MAIN HEADING
+================================= */
+
+h1 {
+    max-width: 850px;
+    margin: 55px auto 12px;
+    text-align: center;
+    color: var(--text);
+    font-size: clamp(32px, 5vw, 50px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    margin: 22px auto 18px;
+    background: var(--red);
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(255, 48, 48, 0.4);
+}
+
+/* ==============================
+   DATE PICKER FORM
+================================= */
+
+#space-form {
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto 25px;
+    padding: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 15px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+#space-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: -7px;
+    color: #e6e6e6;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#date {
+    flex: 1;
+    min-width: 180px;
+    min-height: 46px;
+    padding: 11px 14px;
+    color: white;
+    color-scheme: dark;
+    background: #0a0a0a;
+    border: 1px solid #353535;
+    border-radius: 9px;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#date:hover {
+    border-color: #666;
+}
+
+#date:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(255, 48, 48, 0.12);
+}
+
+/* ==============================
+   BUTTONS
+================================= */
+
+button {
+    min-height: 46px;
+    padding: 11px 23px;
+    color: white;
+    background: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: var(--red-hover);
+    box-shadow: 0 5px 20px rgba(255, 48, 48, 0.25);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 4px;
+}
+
+/* ==============================
+   STATUS MESSAGE
+================================= */
+
+#status {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 0 10px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 14px;
+}
+
+#status:empty {
+    display: none;
+}
+
+/* ==============================
+   SPACE PICTURE RESULT
+================================= */
+
+#result {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 0;
+    padding: 32px;
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.45s ease both;
+}
+
+#result[hidden] {
+    display: none;
+}
+
+/* Picture title */
+
+#title {
+    margin: 0 0 10px;
+    color: white;
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.6px;
+}
+
+/* Picture date */
+
+#date-shown {
+    display: inline-block;
+    margin: 0 0 25px;
+    padding: 5px 12px;
+    color: #ff7777;
+    background: rgba(255, 48, 48, 0.1);
+    border: 1px solid rgba(255, 48, 48, 0.25);
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+/* Space image */
+
+.space-image {
+    display: block;
+    width: 100%;
+    max-height: 650px;
+    margin: 0 auto 28px;
+    object-fit: contain;
+    background: #080808;
+    border: 1px solid #303030;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Image description */
+
+#description {
+    margin: 0 0 25px;
+    color: #c5c5c5;
+    font-size: 15px;
+    line-height: 1.9;
+    white-space: pre-line;
+}
+
+/* NASA link */
+
+#nasa-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 19px;
+    color: white;
+    background: transparent;
+    border: 1px solid var(--red);
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+#nasa-link::after {
+    content: "↗";
+    font-size: 17px;
+}
+
+#nasa-link:hover {
+    background: rgba(255, 48, 48, 0.13);
+    box-shadow: 0 0 20px rgba(255, 48, 48, 0.12);
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   ANIMATIONS
+================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 15px 35px;
+    }
+
+    nav {
+        gap: 4px;
+        padding: 16px 0;
+    }
+
+    nav a {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+
+    h1 {
+        margin-top: 38px;
+        letter-spacing: -0.8px;
+    }
+
+    #space-form {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    #date,
+    #space-form button {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    #result {
+        margin-top: 25px;
+        padding: 20px;
+        border-radius: 13px;
+    }
+
+    .space-image {
+        max-height: 450px;
+        border-radius: 9px;
+    }
+
+    #description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    #nasa-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Accessibility: reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ========================================
+   NEW STYLE RULES
+   Fonts, positioning, and navigation
+   Black background, red accents, white text
+======================================== */
+
+/* Global fonts and spacing */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+p {
+    line-height: 1.75;
+}
+
+/* Center and size the main content */
+
+main {
+    width: 92%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Main page heading */
+
+body>h1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 42px auto 18px;
+    padding: 0 15px;
+    font-size: clamp(30px, 5vw, 42px);
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* Project section positioning */
+
+.projects-section {
+    padding-top: 45px;
+}
+
+.projects-section h2 {
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+.intro {
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+/* Navigation styling */
+
+#linkers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 14px;
+
+
+    background: #101010;
+    border: 1px solid #292929;
+    border-bottom: 2px solid #c40000;
+    border-radius: 10px;
+}
+
+#linkers a {
+    display: inline-block;
+    padding: 10px 18px;
+
+    color: #ffffff;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 600;
+
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+#linkers a:hover {
+    background: #241010;
+    border-color: #c40000;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    #linkers {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    #linkers a {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Keep the header navigation aligned */
+
+header nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+header nav a {
+    padding: 9px 14px;
+}
+
+/* Project cards */
+
+.projects-container {
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.project-card {
+    width: 300px;
+    max-width: 100%;
+    padding: 26px;
+    border-radius: 12px;
+}
+
+/* Center login and status sections */
+
+#login-section {
+    width: 90%;
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+#status {
+    width: 90%;
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+/* Center guestbook content */
+
+#guestbook-list,
+#guestbook-form {
+    width: 90%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center the NASA form and result */
+
+#space-form {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#result {
+    width: 100%;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Keep the space image inside its container */
+
+.space-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+/* Keep the 404 page centered */
+
+.error-page {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-page h1 {
+    margin: 0;
+    font-size: clamp(70px, 12vw, 120px);
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    body>h1 {
+        margin-top: 32px;
+        font-size: clamp(28px, 8vw, 38px);
+    }
+
+    nav {
+        margin: 12px auto 22px;
+        padding: 12px 8px;
+        gap: 6px;
+        border-radius: 10px;
+    }
+
+    nav a {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    nav a::after {
+        left: 12px;
+        right: 12px;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .projects-section {
+        padding-top: 30px;
+    }
+
+    .projects-section h2 {
+        font-size: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #login-section,
+    #status {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #guestbook-list,
+    #guestbook-form {
+        width: 100%;
+    }
+
+    #space-form {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    #result {
+        padding: 20px;
+    }
+}

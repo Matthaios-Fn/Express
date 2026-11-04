@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c3a95a77-56cd-4045-88ab-a9475500a282",
+    "username": "mdeezlyadmin",
+    "passwordHash": "$2b$12$qvIas/bYpqe3WEYX4ztjEuBfgoyF0xejauaKYcKSt3xSpDoDB5OBq",
+    "role": "admin",
+    "createdAt": "2026-10-27T12:47:52.529Z"
+  },
+  {
+    "id": "c69d7cf5-c323-473f-a6db-676739601abc",
+    "username": "mdeezly",
+    "passwordHash": "$2b$12$tTo5/ynkuxS1QnTCaar78OxZd4XOd4Vn/1BVqO6pdtFOxDKvSN.Bi",
+    "role": "user",
+    "createdAt": "2026-10-27T13:25:11.234Z"
+  }
+]
